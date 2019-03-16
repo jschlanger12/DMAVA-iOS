@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Practicum.xcodeproj">
+      location = "group:/Users/dev/Desktop/Practicum-Project/Practicum/Practicum/VSOAnnotation.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VSO.json">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

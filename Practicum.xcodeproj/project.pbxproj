@@ -7,21 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9574CB7F464E3A34075A845 /* Pods_Practicum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D65699B5AFB59A6D2EAF9F /* Pods_Practicum.framework */; };
+		D70DFC1B21FEAE3F00455118 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D70DFC1A21FEAE3F00455118 /* GoogleService-Info.plist */; };
+		D70DFC1D21FEAF5000455118 /* icons8-menu-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D70DFC1C21FEAF5000455118 /* icons8-menu-25.png */; };
+		D721C60921FE9FDF003C08CC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721C60821FE9FDF003C08CC /* UserModel.swift */; };
+		D7671DC4222C9E9300AED37F /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DC3222C9E9300AED37F /* ResourceViewController.swift */; };
+		D7671DC6222CC86A00AED37F /* FormDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DC5222CC86A00AED37F /* FormDataModel.swift */; };
+		D7671DCA222DCD3700AED37F /* PDFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DC9222DCD3700AED37F /* PDFTableViewController.swift */; };
+		D7671DCC222DD03300AED37F /* PDFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DCB222DD03300AED37F /* PDFTableViewCell.swift */; };
+		D7671DCE222DDE1100AED37F /* PDFFieldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DCD222DDE1100AED37F /* PDFFieldTableViewController.swift */; };
+		D7671DD0222DDE2600AED37F /* PDFFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DCF222DDE2600AED37F /* PDFFieldTableViewCell.swift */; };
+		D7671DD2222DF7E900AED37F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DD1222DF7E900AED37F /* MyViewController.swift */; };
+		D7671DD7222E02A500AED37F /* MyTestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DD6222E02A500AED37F /* MyTestTableViewCell.swift */; };
+		D76997C321A369FB00E5D04D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997C221A369FB00E5D04D /* HomeTableViewCell.swift */; };
+		D76997C521A36A0E00E5D04D /* ResourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997C421A36A0E00E5D04D /* ResourceTableViewCell.swift */; };
+		D76997C721A36A2A00E5D04D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997C621A36A2A00E5D04D /* LoginViewController.swift */; };
+		D76997C921A36A4C00E5D04D /* ResourceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997C821A36A4C00E5D04D /* ResourceTableViewController.swift */; };
+		D76997CB21A36A5700E5D04D /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997CA21A36A5700E5D04D /* HomeTableViewController.swift */; };
 		D776E610217E338600D331BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776E60F217E338600D331BA /* AppDelegate.swift */; };
-		D776E612217E338600D331BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776E611217E338600D331BA /* ViewController.swift */; };
 		D776E615217E338600D331BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D776E613217E338600D331BA /* Main.storyboard */; };
 		D776E617217E338A00D331BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D776E616217E338A00D331BA /* Assets.xcassets */; };
 		D776E61A217E338A00D331BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D776E618217E338A00D331BA /* LaunchScreen.storyboard */; };
+		D797094121C8163500E0C026 /* VSOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797094021C8163500E0C026 /* VSOModel.swift */; };
+		D797094521C8242100E0C026 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797094421C8242100E0C026 /* MapViewController.swift */; };
+		D797094721C835C700E0C026 /* ForgotPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797094621C835C700E0C026 /* ForgotPWViewController.swift */; };
+		D797094921C844DD00E0C026 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797094821C844DD00E0C026 /* NewUserViewController.swift */; };
+		D797094C21C847E500E0C026 /* VSOAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797094B21C847E500E0C026 /* VSOAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10D65699B5AFB59A6D2EAF9F /* Pods_Practicum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practicum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		619608F621BAB7AC8634DC67 /* Pods-Practicum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practicum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Practicum/Pods-Practicum.debug.xcconfig"; sourceTree = "<group>"; };
+		D664F6B1541B436085DF286C /* Pods-Practicum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practicum.release.xcconfig"; path = "Pods/Target Support Files/Pods-Practicum/Pods-Practicum.release.xcconfig"; sourceTree = "<group>"; };
+		D70DFC1A21FEAE3F00455118 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D70DFC1C21FEAF5000455118 /* icons8-menu-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-menu-25.png"; sourceTree = "<group>"; };
+		D721C60821FE9FDF003C08CC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D7671DC3222C9E9300AED37F /* ResourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
+		D7671DC5222CC86A00AED37F /* FormDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataModel.swift; sourceTree = "<group>"; };
+		D7671DC9222DCD3700AED37F /* PDFTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTableViewController.swift; sourceTree = "<group>"; };
+		D7671DCB222DD03300AED37F /* PDFTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTableViewCell.swift; sourceTree = "<group>"; };
+		D7671DCD222DDE1100AED37F /* PDFFieldTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFFieldTableViewController.swift; sourceTree = "<group>"; };
+		D7671DCF222DDE2600AED37F /* PDFFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFFieldTableViewCell.swift; sourceTree = "<group>"; };
+		D7671DD1222DF7E900AED37F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		D7671DD6222E02A500AED37F /* MyTestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTestTableViewCell.swift; path = "/Users/dev/Desktop/Practicum-Project/Practicum/Practicum/MyTestTableViewCell.swift"; sourceTree = "<absolute>"; };
+		D76997C221A369FB00E5D04D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		D76997C421A36A0E00E5D04D /* ResourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceTableViewCell.swift; sourceTree = "<group>"; };
+		D76997C621A36A2A00E5D04D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D76997C821A36A4C00E5D04D /* ResourceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceTableViewController.swift; sourceTree = "<group>"; };
+		D76997CA21A36A5700E5D04D /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		D776E60C217E338600D331BA /* Practicum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practicum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D776E60F217E338600D331BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D776E611217E338600D331BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D776E614217E338600D331BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D776E616217E338A00D331BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D776E619217E338A00D331BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D776E61B217E338A00D331BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D797094021C8163500E0C026 /* VSOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSOModel.swift; sourceTree = "<group>"; };
+		D797094421C8242100E0C026 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D797094621C835C700E0C026 /* ForgotPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPWViewController.swift; sourceTree = "<group>"; };
+		D797094821C844DD00E0C026 /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
+		D797094B21C847E500E0C026 /* VSOAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VSOAnnotation.swift; path = "/Users/dev/Desktop/Practicum-Project/Practicum/Practicum/VSOAnnotation.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +73,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9574CB7F464E3A34075A845 /* Pods_Practicum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79D822F42C3CA7243D62B0DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				619608F621BAB7AC8634DC67 /* Pods-Practicum.debug.xcconfig */,
+				D664F6B1541B436085DF286C /* Pods-Practicum.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5C1A520A48CDE48DE00E688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10D65699B5AFB59A6D2EAF9F /* Pods_Practicum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D776E603217E338600D331BA = {
 			isa = PBXGroup;
 			children = (
 				D776E60E217E338600D331BA /* Practicum */,
 				D776E60D217E338600D331BA /* Products */,
+				79D822F42C3CA7243D62B0DC /* Pods */,
+				A5C1A520A48CDE48DE00E688 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +118,32 @@
 		D776E60E217E338600D331BA /* Practicum */ = {
 			isa = PBXGroup;
 			children = (
-				D776E60F217E338600D331BA /* AppDelegate.swift */,
-				D776E611217E338600D331BA /* ViewController.swift */,
 				D776E613217E338600D331BA /* Main.storyboard */,
+				D7671DD6222E02A500AED37F /* MyTestTableViewCell.swift */,
+				D7671DD1222DF7E900AED37F /* MyViewController.swift */,
+				D70DFC1C21FEAF5000455118 /* icons8-menu-25.png */,
+				D70DFC1A21FEAE3F00455118 /* GoogleService-Info.plist */,
+				D797094B21C847E500E0C026 /* VSOAnnotation.swift */,
+				D776E60F217E338600D331BA /* AppDelegate.swift */,
+				D797094821C844DD00E0C026 /* NewUserViewController.swift */,
+				D797094621C835C700E0C026 /* ForgotPWViewController.swift */,
+				D797094421C8242100E0C026 /* MapViewController.swift */,
+				D76997C821A36A4C00E5D04D /* ResourceTableViewController.swift */,
+				D76997C421A36A0E00E5D04D /* ResourceTableViewCell.swift */,
+				D76997CA21A36A5700E5D04D /* HomeTableViewController.swift */,
+				D76997C221A369FB00E5D04D /* HomeTableViewCell.swift */,
+				D76997C621A36A2A00E5D04D /* LoginViewController.swift */,
 				D776E616217E338A00D331BA /* Assets.xcassets */,
 				D776E618217E338A00D331BA /* LaunchScreen.storyboard */,
 				D776E61B217E338A00D331BA /* Info.plist */,
+				D797094021C8163500E0C026 /* VSOModel.swift */,
+				D721C60821FE9FDF003C08CC /* UserModel.swift */,
+				D7671DC3222C9E9300AED37F /* ResourceViewController.swift */,
+				D7671DC5222CC86A00AED37F /* FormDataModel.swift */,
+				D7671DC9222DCD3700AED37F /* PDFTableViewController.swift */,
+				D7671DCB222DD03300AED37F /* PDFTableViewCell.swift */,
+				D7671DCD222DDE1100AED37F /* PDFFieldTableViewController.swift */,
+				D7671DCF222DDE2600AED37F /* PDFFieldTableViewCell.swift */,
 			);
 			path = Practicum;
 			sourceTree = "<group>";
@@ -71,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D776E61E217E338A00D331BA /* Build configuration list for PBXNativeTarget "Practicum" */;
 			buildPhases = (
+				4D975DB8EF7676BEC13AC5F9 /* [CP] Check Pods Manifest.lock */,
 				D776E608217E338600D331BA /* Sources */,
 				D776E609217E338600D331BA /* Frameworks */,
 				D776E60A217E338600D331BA /* Resources */,
+				835CBDF2BC22FE9FEE524486 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,19 +210,94 @@
 			files = (
 				D776E61A217E338A00D331BA /* LaunchScreen.storyboard in Resources */,
 				D776E617217E338A00D331BA /* Assets.xcassets in Resources */,
+				D70DFC1B21FEAE3F00455118 /* GoogleService-Info.plist in Resources */,
+				D70DFC1D21FEAF5000455118 /* icons8-menu-25.png in Resources */,
 				D776E615217E338600D331BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D975DB8EF7676BEC13AC5F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Practicum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835CBDF2BC22FE9FEE524486 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Practicum/Pods-Practicum-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Practicum/Pods-Practicum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D776E608217E338600D331BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D776E612217E338600D331BA /* ViewController.swift in Sources */,
+				D76997CB21A36A5700E5D04D /* HomeTableViewController.swift in Sources */,
+				D76997C721A36A2A00E5D04D /* LoginViewController.swift in Sources */,
+				D797094921C844DD00E0C026 /* NewUserViewController.swift in Sources */,
+				D76997C521A36A0E00E5D04D /* ResourceTableViewCell.swift in Sources */,
+				D76997C921A36A4C00E5D04D /* ResourceTableViewController.swift in Sources */,
+				D7671DC4222C9E9300AED37F /* ResourceViewController.swift in Sources */,
+				D76997C321A369FB00E5D04D /* HomeTableViewCell.swift in Sources */,
+				D7671DCA222DCD3700AED37F /* PDFTableViewController.swift in Sources */,
+				D7671DD2222DF7E900AED37F /* MyViewController.swift in Sources */,
+				D797094121C8163500E0C026 /* VSOModel.swift in Sources */,
 				D776E610217E338600D331BA /* AppDelegate.swift in Sources */,
+				D7671DCE222DDE1100AED37F /* PDFFieldTableViewController.swift in Sources */,
+				D797094C21C847E500E0C026 /* VSOAnnotation.swift in Sources */,
+				D797094721C835C700E0C026 /* ForgotPWViewController.swift in Sources */,
+				D721C60921FE9FDF003C08CC /* UserModel.swift in Sources */,
+				D797094521C8242100E0C026 /* MapViewController.swift in Sources */,
+				D7671DD0222DDE2600AED37F /* PDFFieldTableViewCell.swift in Sources */,
+				D7671DD7222E02A500AED37F /* MyTestTableViewCell.swift in Sources */,
+				D7671DCC222DD03300AED37F /* PDFTableViewCell.swift in Sources */,
+				D7671DC6222CC86A00AED37F /* FormDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +441,11 @@
 		};
 		D776E61F217E338A00D331BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 619608F621BAB7AC8634DC67 /* Pods-Practicum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX7289Z8P4;
 				INFOPLIST_FILE = Practicum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +460,11 @@
 		};
 		D776E620217E338A00D331BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D664F6B1541B436085DF286C /* Pods-Practicum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX7289Z8P4;
 				INFOPLIST_FILE = Practicum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

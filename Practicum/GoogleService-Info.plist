@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>547805948013-u23tovso2f76l35n6b0dql9uj4414gmm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.547805948013-u23tovso2f76l35n6b0dql9uj4414gmm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA8zu7qm5tjSEuXD2K3hUf9FD9sZ4pyJfs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>547805948013</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.monmouth.practicum.s1065288.Practicum</string>
+	<key>PROJECT_ID</key>
+	<string>dmava-df1b1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dmava-df1b1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:547805948013:ios:5e0e91ce7b03ff2c</string>
+	<key>DATABASE_URL</key>
+	<string>https://dmava-df1b1.firebaseio.com</string>
+</dict>
+</plist>
