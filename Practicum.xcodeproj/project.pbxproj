@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C9574CB7F464E3A34075A845 /* Pods_Practicum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D65699B5AFB59A6D2EAF9F /* Pods_Practicum.framework */; };
-		D70DFC1B21FEAE3F00455118 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D70DFC1A21FEAE3F00455118 /* GoogleService-Info.plist */; };
+		D70A44202240067700CB6D41 /* HotlineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70A441F2240067700CB6D41 /* HotlineModel.swift */; };
+		D70A4422224034DE00CB6D41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D70A4421224034DE00CB6D41 /* GoogleService-Info.plist */; };
 		D70DFC1D21FEAF5000455118 /* icons8-menu-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D70DFC1C21FEAF5000455118 /* icons8-menu-25.png */; };
+		D70E14482240717100B5AA56 /* HotlineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E14472240717100B5AA56 /* HotlineDetailViewController.swift */; };
+		D70E144E2243552800B5AA56 /* DMAVA_transparent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D70E144D2243552800B5AA56 /* DMAVA_transparent.jpg */; };
+		D70E14502243E32900B5AA56 /* dmava.gif in Resources */ = {isa = PBXBuildFile; fileRef = D70E144F2243E32600B5AA56 /* dmava.gif */; };
 		D721C60921FE9FDF003C08CC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721C60821FE9FDF003C08CC /* UserModel.swift */; };
 		D7671DC4222C9E9300AED37F /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DC3222C9E9300AED37F /* ResourceViewController.swift */; };
 		D7671DC6222CC86A00AED37F /* FormDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DC5222CC86A00AED37F /* FormDataModel.swift */; };
@@ -19,11 +23,9 @@
 		D7671DD0222DDE2600AED37F /* PDFFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DCF222DDE2600AED37F /* PDFFieldTableViewCell.swift */; };
 		D7671DD2222DF7E900AED37F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DD1222DF7E900AED37F /* MyViewController.swift */; };
 		D7671DD7222E02A500AED37F /* MyTestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7671DD6222E02A500AED37F /* MyTestTableViewCell.swift */; };
-		D76997C321A369FB00E5D04D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997C221A369FB00E5D04D /* HomeTableViewCell.swift */; };
 		D76997C521A36A0E00E5D04D /* ResourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997C421A36A0E00E5D04D /* ResourceTableViewCell.swift */; };
 		D76997C721A36A2A00E5D04D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997C621A36A2A00E5D04D /* LoginViewController.swift */; };
 		D76997C921A36A4C00E5D04D /* ResourceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997C821A36A4C00E5D04D /* ResourceTableViewController.swift */; };
-		D76997CB21A36A5700E5D04D /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76997CA21A36A5700E5D04D /* HomeTableViewController.swift */; };
 		D776E610217E338600D331BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776E60F217E338600D331BA /* AppDelegate.swift */; };
 		D776E615217E338600D331BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D776E613217E338600D331BA /* Main.storyboard */; };
 		D776E617217E338A00D331BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D776E616217E338A00D331BA /* Assets.xcassets */; };
@@ -33,14 +35,28 @@
 		D797094721C835C700E0C026 /* ForgotPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797094621C835C700E0C026 /* ForgotPWViewController.swift */; };
 		D797094921C844DD00E0C026 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797094821C844DD00E0C026 /* NewUserViewController.swift */; };
 		D797094C21C847E500E0C026 /* VSOAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797094B21C847E500E0C026 /* VSOAnnotation.swift */; };
+		D7BB24BC225E711600AB72B2 /* PDFSectionPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BB24BB225E711600AB72B2 /* PDFSectionPopoverViewController.swift */; };
+		D7FCEEEF224ABF1C0021508F /* hotlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCEEEE224ABF1C0021508F /* hotlineViewController.swift */; };
+		D7FCEEF1224AC0540021508F /* HotlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCEEF0224AC0540021508F /* HotlineTableViewCell.swift */; };
+		D7FCEEF3224AEB390021508F /* icons8-document-26.png in Resources */ = {isa = PBXBuildFile; fileRef = D7FCEEF2224AEB380021508F /* icons8-document-26.png */; };
+		D7FCEEF5224AEB480021508F /* icons8-home-26.png in Resources */ = {isa = PBXBuildFile; fileRef = D7FCEEF4224AEB480021508F /* icons8-home-26.png */; };
+		D7FCEEF7224AEB560021508F /* icons8-map-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D7FCEEF6224AEB560021508F /* icons8-map-filled-50.png */; };
+		D7FCEEF9224AEBBD0021508F /* icons8-map-30.png in Resources */ = {isa = PBXBuildFile; fileRef = D7FCEEF8224AEBBC0021508F /* icons8-map-30.png */; };
+		D7FCEEFD22529DE00021508F /* ResourceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCEEFC22529DE00021508F /* ResourceListViewController.swift */; };
+		D7FCEEFF2252A77C0021508F /* ResourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCEEFE2252A77C0021508F /* ResourceModel.swift */; };
+		D7FCEF012252CA130021508F /* ResourceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCEF002252CA130021508F /* ResourceDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10D65699B5AFB59A6D2EAF9F /* Pods_Practicum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practicum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		619608F621BAB7AC8634DC67 /* Pods-Practicum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practicum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Practicum/Pods-Practicum.debug.xcconfig"; sourceTree = "<group>"; };
 		D664F6B1541B436085DF286C /* Pods-Practicum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practicum.release.xcconfig"; path = "Pods/Target Support Files/Pods-Practicum/Pods-Practicum.release.xcconfig"; sourceTree = "<group>"; };
-		D70DFC1A21FEAE3F00455118 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D70A441F2240067700CB6D41 /* HotlineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotlineModel.swift; sourceTree = "<group>"; };
+		D70A4421224034DE00CB6D41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D70DFC1C21FEAF5000455118 /* icons8-menu-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-menu-25.png"; sourceTree = "<group>"; };
+		D70E14472240717100B5AA56 /* HotlineDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotlineDetailViewController.swift; sourceTree = "<group>"; };
+		D70E144D2243552800B5AA56 /* DMAVA_transparent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DMAVA_transparent.jpg; sourceTree = "<group>"; };
+		D70E144F2243E32600B5AA56 /* dmava.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dmava.gif; sourceTree = "<group>"; };
 		D721C60821FE9FDF003C08CC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		D7671DC3222C9E9300AED37F /* ResourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
 		D7671DC5222CC86A00AED37F /* FormDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataModel.swift; sourceTree = "<group>"; };
@@ -50,11 +66,9 @@
 		D7671DCF222DDE2600AED37F /* PDFFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFFieldTableViewCell.swift; sourceTree = "<group>"; };
 		D7671DD1222DF7E900AED37F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		D7671DD6222E02A500AED37F /* MyTestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTestTableViewCell.swift; path = "/Users/dev/Desktop/Practicum-Project/Practicum/Practicum/MyTestTableViewCell.swift"; sourceTree = "<absolute>"; };
-		D76997C221A369FB00E5D04D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		D76997C421A36A0E00E5D04D /* ResourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceTableViewCell.swift; sourceTree = "<group>"; };
 		D76997C621A36A2A00E5D04D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D76997C821A36A4C00E5D04D /* ResourceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceTableViewController.swift; sourceTree = "<group>"; };
-		D76997CA21A36A5700E5D04D /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		D776E60C217E338600D331BA /* Practicum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practicum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D776E60F217E338600D331BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D776E614217E338600D331BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +80,16 @@
 		D797094621C835C700E0C026 /* ForgotPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPWViewController.swift; sourceTree = "<group>"; };
 		D797094821C844DD00E0C026 /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 		D797094B21C847E500E0C026 /* VSOAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VSOAnnotation.swift; path = "/Users/dev/Desktop/Practicum-Project/Practicum/Practicum/VSOAnnotation.swift"; sourceTree = "<absolute>"; };
+		D7BB24BB225E711600AB72B2 /* PDFSectionPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSectionPopoverViewController.swift; sourceTree = "<group>"; };
+		D7FCEEEE224ABF1C0021508F /* hotlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hotlineViewController.swift; sourceTree = "<group>"; };
+		D7FCEEF0224AC0540021508F /* HotlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotlineTableViewCell.swift; sourceTree = "<group>"; };
+		D7FCEEF2224AEB380021508F /* icons8-document-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-document-26.png"; sourceTree = "<group>"; };
+		D7FCEEF4224AEB480021508F /* icons8-home-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-home-26.png"; sourceTree = "<group>"; };
+		D7FCEEF6224AEB560021508F /* icons8-map-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-map-filled-50.png"; sourceTree = "<group>"; };
+		D7FCEEF8224AEBBC0021508F /* icons8-map-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-map-30.png"; sourceTree = "<group>"; };
+		D7FCEEFC22529DE00021508F /* ResourceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceListViewController.swift; sourceTree = "<group>"; };
+		D7FCEEFE2252A77C0021508F /* ResourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceModel.swift; sourceTree = "<group>"; };
+		D7FCEF002252CA130021508F /* ResourceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,31 +143,43 @@
 			isa = PBXGroup;
 			children = (
 				D776E613217E338600D331BA /* Main.storyboard */,
-				D7671DD6222E02A500AED37F /* MyTestTableViewCell.swift */,
-				D7671DD1222DF7E900AED37F /* MyViewController.swift */,
+				D7BB24BB225E711600AB72B2 /* PDFSectionPopoverViewController.swift */,
 				D70DFC1C21FEAF5000455118 /* icons8-menu-25.png */,
-				D70DFC1A21FEAE3F00455118 /* GoogleService-Info.plist */,
-				D797094B21C847E500E0C026 /* VSOAnnotation.swift */,
-				D776E60F217E338600D331BA /* AppDelegate.swift */,
-				D797094821C844DD00E0C026 /* NewUserViewController.swift */,
-				D797094621C835C700E0C026 /* ForgotPWViewController.swift */,
-				D797094421C8242100E0C026 /* MapViewController.swift */,
-				D76997C821A36A4C00E5D04D /* ResourceTableViewController.swift */,
-				D76997C421A36A0E00E5D04D /* ResourceTableViewCell.swift */,
-				D76997CA21A36A5700E5D04D /* HomeTableViewController.swift */,
-				D76997C221A369FB00E5D04D /* HomeTableViewCell.swift */,
-				D76997C621A36A2A00E5D04D /* LoginViewController.swift */,
+				D7FCEEF2224AEB380021508F /* icons8-document-26.png */,
+				D70E144D2243552800B5AA56 /* DMAVA_transparent.jpg */,
+				D7FCEEF4224AEB480021508F /* icons8-home-26.png */,
+				D7FCEEF8224AEBBC0021508F /* icons8-map-30.png */,
+				D7FCEEF6224AEB560021508F /* icons8-map-filled-50.png */,
+				D70E144F2243E32600B5AA56 /* dmava.gif */,
+				D7FCEF002252CA130021508F /* ResourceDetailViewController.swift */,
+				D7FCEEFC22529DE00021508F /* ResourceListViewController.swift */,
+				D7FCEEFE2252A77C0021508F /* ResourceModel.swift */,
 				D776E616217E338A00D331BA /* Assets.xcassets */,
 				D776E618217E338A00D331BA /* LaunchScreen.storyboard */,
+				D70A4421224034DE00CB6D41 /* GoogleService-Info.plist */,
 				D776E61B217E338A00D331BA /* Info.plist */,
+				D776E60F217E338600D331BA /* AppDelegate.swift */,
+				D7671DD6222E02A500AED37F /* MyTestTableViewCell.swift */,
+				D76997C421A36A0E00E5D04D /* ResourceTableViewCell.swift */,
+				D7FCEEF0224AC0540021508F /* HotlineTableViewCell.swift */,
+				D7671DD1222DF7E900AED37F /* MyViewController.swift */,
+				D797094821C844DD00E0C026 /* NewUserViewController.swift */,
+				D797094421C8242100E0C026 /* MapViewController.swift */,
+				D797094621C835C700E0C026 /* ForgotPWViewController.swift */,
+				D76997C821A36A4C00E5D04D /* ResourceTableViewController.swift */,
+				D7671DCB222DD03300AED37F /* PDFTableViewCell.swift */,
+				D7671DCF222DDE2600AED37F /* PDFFieldTableViewCell.swift */,
+				D7FCEEEE224ABF1C0021508F /* hotlineViewController.swift */,
+				D70E14472240717100B5AA56 /* HotlineDetailViewController.swift */,
+				D76997C621A36A2A00E5D04D /* LoginViewController.swift */,
+				D7671DC3222C9E9300AED37F /* ResourceViewController.swift */,
+				D7671DC9222DCD3700AED37F /* PDFTableViewController.swift */,
+				D7671DCD222DDE1100AED37F /* PDFFieldTableViewController.swift */,
+				D7671DC5222CC86A00AED37F /* FormDataModel.swift */,
+				D70A441F2240067700CB6D41 /* HotlineModel.swift */,
 				D797094021C8163500E0C026 /* VSOModel.swift */,
 				D721C60821FE9FDF003C08CC /* UserModel.swift */,
-				D7671DC3222C9E9300AED37F /* ResourceViewController.swift */,
-				D7671DC5222CC86A00AED37F /* FormDataModel.swift */,
-				D7671DC9222DCD3700AED37F /* PDFTableViewController.swift */,
-				D7671DCB222DD03300AED37F /* PDFTableViewCell.swift */,
-				D7671DCD222DDE1100AED37F /* PDFFieldTableViewController.swift */,
-				D7671DCF222DDE2600AED37F /* PDFFieldTableViewCell.swift */,
+				D797094B21C847E500E0C026 /* VSOAnnotation.swift */,
 			);
 			path = Practicum;
 			sourceTree = "<group>";
@@ -209,9 +245,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D776E61A217E338A00D331BA /* LaunchScreen.storyboard in Resources */,
+				D7FCEEF5224AEB480021508F /* icons8-home-26.png in Resources */,
+				D70E14502243E32900B5AA56 /* dmava.gif in Resources */,
 				D776E617217E338A00D331BA /* Assets.xcassets in Resources */,
-				D70DFC1B21FEAE3F00455118 /* GoogleService-Info.plist in Resources */,
+				D70A4422224034DE00CB6D41 /* GoogleService-Info.plist in Resources */,
+				D7FCEEF9224AEBBD0021508F /* icons8-map-30.png in Resources */,
+				D70E144E2243552800B5AA56 /* DMAVA_transparent.jpg in Resources */,
 				D70DFC1D21FEAF5000455118 /* icons8-menu-25.png in Resources */,
+				D7FCEEF7224AEB560021508F /* icons8-map-filled-50.png in Resources */,
+				D7FCEEF3224AEB390021508F /* icons8-document-26.png in Resources */,
 				D776E615217E338600D331BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,20 +292,30 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Practicum/Pods-Practicum-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,24 +330,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76997CB21A36A5700E5D04D /* HomeTableViewController.swift in Sources */,
 				D76997C721A36A2A00E5D04D /* LoginViewController.swift in Sources */,
+				D7BB24BC225E711600AB72B2 /* PDFSectionPopoverViewController.swift in Sources */,
 				D797094921C844DD00E0C026 /* NewUserViewController.swift in Sources */,
+				D70A44202240067700CB6D41 /* HotlineModel.swift in Sources */,
+				D7FCEEFD22529DE00021508F /* ResourceListViewController.swift in Sources */,
 				D76997C521A36A0E00E5D04D /* ResourceTableViewCell.swift in Sources */,
 				D76997C921A36A4C00E5D04D /* ResourceTableViewController.swift in Sources */,
 				D7671DC4222C9E9300AED37F /* ResourceViewController.swift in Sources */,
-				D76997C321A369FB00E5D04D /* HomeTableViewCell.swift in Sources */,
+				D7FCEEFF2252A77C0021508F /* ResourceModel.swift in Sources */,
+				D7FCEEEF224ABF1C0021508F /* hotlineViewController.swift in Sources */,
+				D7FCEEF1224AC0540021508F /* HotlineTableViewCell.swift in Sources */,
 				D7671DCA222DCD3700AED37F /* PDFTableViewController.swift in Sources */,
 				D7671DD2222DF7E900AED37F /* MyViewController.swift in Sources */,
 				D797094121C8163500E0C026 /* VSOModel.swift in Sources */,
 				D776E610217E338600D331BA /* AppDelegate.swift in Sources */,
 				D7671DCE222DDE1100AED37F /* PDFFieldTableViewController.swift in Sources */,
+				D70E14482240717100B5AA56 /* HotlineDetailViewController.swift in Sources */,
 				D797094C21C847E500E0C026 /* VSOAnnotation.swift in Sources */,
 				D797094721C835C700E0C026 /* ForgotPWViewController.swift in Sources */,
 				D721C60921FE9FDF003C08CC /* UserModel.swift in Sources */,
 				D797094521C8242100E0C026 /* MapViewController.swift in Sources */,
 				D7671DD0222DDE2600AED37F /* PDFFieldTableViewCell.swift in Sources */,
 				D7671DD7222E02A500AED37F /* MyTestTableViewCell.swift in Sources */,
+				D7FCEF012252CA130021508F /* ResourceDetailViewController.swift in Sources */,
 				D7671DCC222DD03300AED37F /* PDFTableViewCell.swift in Sources */,
 				D7671DC6222CC86A00AED37F /* FormDataModel.swift in Sources */,
 			);

@@ -7,6 +7,7 @@
 
 import Foundation
 import MapKit
+import Contacts
 
 class VSOAnnotation: NSObject, MKAnnotation{
     
@@ -14,7 +15,7 @@ class VSOAnnotation: NSObject, MKAnnotation{
     var county: String?
     var location: String?
     var hours: String?
-    var name: String?
+    var title: String?
     var phone: String?
     var fax: String?
     var email: String?
@@ -24,10 +25,24 @@ class VSOAnnotation: NSObject, MKAnnotation{
         self.county = county
         self.location = location
         self.hours = hours
-        self.name = name
+        self.title = name
         self.phone = phone
         self.fax = fax
         self.email = email
+        
+        super.init()
+    }
+    
+    var subtitle: String? {
+        return location
+    }
+    
+    func mapItem() -> MKMapItem {
+        let addressDict = [CNPostalAddressStreetKey: subtitle!]
+        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = title
+        return mapItem
     }
     
 }

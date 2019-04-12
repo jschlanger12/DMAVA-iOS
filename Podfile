@@ -10,5 +10,6 @@ target 'Practicum' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'M13Checkbox'
+  pod 'Firebase/Firestore'
 
 end

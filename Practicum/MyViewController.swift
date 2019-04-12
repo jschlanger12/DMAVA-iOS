@@ -9,8 +9,8 @@
 import UIKit
 import M13Checkbox
 
-class MyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
-    @IBOutlet weak var pdfSections: UITableView!
+class MyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate, UIPopoverPresentationControllerDelegate, loadViewDelegate {
+//    @IBOutlet weak var pdfSections: UITableView!
     @IBOutlet weak var pdfScrollSectionFields: UIScrollView!
     
     var testButton = UIButton()
@@ -18,25 +18,59 @@ class MyViewController: UIViewController, UITableViewDataSource, UITableViewDele
     var dictFieldData: [String:[formData]] = [:]
     var currentFields: [formData] = []
     var currentKey: String = ""
+    var currentURL: String = ""
+    var stopLoading: Bool = false
+    
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet var Sections: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        pdfSections.delegate = self
-        pdfSections.dataSource = self
+//        pdfSections.delegate = self
+//        pdfSections.dataSource = self
         
         pdfScrollSectionFields.delegate = self
+        loadingIndicator.hidesWhenStopped = true
         
-        self.view.backgroundColor = UIColor.gray
+        if(stopLoading){
+            loadingIndicator.stopAnimating()
+            self.loadScrollView(index: 0)
+        }else{
+            print("hello")
+            
+            loadingIndicator.isHidden = false
+            loadingIndicator.startAnimating()
+        }
+        
+        
+        self.view.backgroundColor = UIColor(red: 130/255.0, green: 128/255.0, blue: 103/255.0, alpha: 1.0)
         getFormFieldData()
+        
     }
+    
+    @IBAction func PDFPopover(_ sender: Any) {
+        self.performSegue(withIdentifier: "popoverSegue", sender: self)
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.none
+    }
+    
+    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool{
+        
+        
+        
+        return true
+    }
+
     
     func scrollViewDidScroll(pdfScrollSectionFields: UIScrollView) {
             pdfScrollSectionFields.contentOffset.x = 0
     }
     
     func getFormFieldData(){
-        let urlString =  "https://g6an8imw21.execute-api.us-east-2.amazonaws.com/default/dmava_get_pdf_json?key1=application_2.pdf"
+        let urlString =  currentURL
         
         let formDataURL = URL(string: urlString)
         
@@ -47,19 +81,33 @@ class MyViewController: UIViewController, UITableViewDataSource, UITableViewDele
                         print("failed")
                         return
                     }
-                    
                     let GroupedFieldData = Dictionary(grouping: pdfFormData.fieldDataList ) { $0.altTitle }
-                    print(GroupedFieldData.keys.sorted())
-                    
                     self.dictFieldData = GroupedFieldData
-                    
                     self.keyList = GroupedFieldData.keys.sorted()
-                    print(self.keyList)
                 }
             }
+            self.stopLoading = true
         }
         task.resume();
-        sleep(20)
+    }
+    
+    
+    
+    func loadScrollView(index: Int){
+        pdfScrollSectionFields.subviews.forEach({ $0.removeFromSuperview() })
+        currentFields = []
+        currentKey = keyList[index]
+        var stackArray: [UIStackView] = []
+        dictFieldData[keyList[index]]!.forEach{ field in
+            currentFields.append(field)
+            if(field.fieldType == "Text"){
+                stackArray.append(createLabelsAndFields(label: createLabel(text: field.title), field: createTextField(fieldText: field.fieldValue), type: "Text"))
+                createFinalStackView(stackArray: stackArray)
+            }else if(field.fieldType == "Button"){
+                stackArray.append(createLabelsAndFields(label: createLabel(text: field.title), field: createCheckBox(state: field.fieldValue), type: "Button"))
+                createFinalStackView(stackArray: stackArray)
+            }
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int
@@ -106,8 +154,18 @@ class MyViewController: UIViewController, UITableViewDataSource, UITableViewDele
         let currentViewTextFields = getAllTextFields(fromView: pdfScrollSectionFields)
         let currentViewCheckboxes = getAllCheckboxes(fromView: pdfScrollSectionFields)
         var index = 0
+        var isNotField = true
         
         currentViewTextFields.forEach{ textfield in
+            
+            while(isNotField){
+                if(dictFieldData[currentKey]![index].fieldType != "Text"){
+                    index += 1
+                }else{
+                    isNotField = false
+                }
+            }
+            
             dictFieldData[currentKey]![index].fieldValue = textfield.text!
             index+=1
         }
@@ -119,7 +177,7 @@ class MyViewController: UIViewController, UITableViewDataSource, UITableViewDele
             if(checkbox.checkState == .checked){
                 dictFieldData[currentKey]![index].fieldValue = "true"
             }
-            index+=1
+            index += 1
         }
         
         
@@ -152,8 +210,11 @@ class MyViewController: UIViewController, UITableViewDataSource, UITableViewDele
         }
         
         testButton.frame = CGRect(x: 0, y: 0, width: 300, height: 40)
-        testButton.backgroundColor = .green
+        testButton.backgroundColor = UIColor(red: 207.0/255.0, green: 205.0/255.0, blue: 184.0/255.0, alpha: 1.0)
         testButton.setTitle("Save Section", for: .normal)
+        testButton.titleLabel?.textColor = .black
+        testButton.layer.cornerRadius = 8
+        testButton.layer.borderWidth = 1
         testButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
         stackView.axis = .vertical
@@ -261,14 +322,26 @@ class MyViewController: UIViewController, UITableViewDataSource, UITableViewDele
         
         return checkbox
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "popoverSegue", let destination = segue.destination as? PDFSectionPopoverViewController {
+            destination.keyList = self.keyList
+            destination.delegate = self
+            
+            let popoverViewController = segue.destination
+            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.popover
+            popoverViewController.popoverPresentationController?.sourceRect = (sender as! UIButton).bounds
+            popoverViewController.popoverPresentationController!.delegate = self
+        }
     }
-    */
+}
 
+protocol loadViewDelegate{
+    func loadScrollView(index: Int)
 }

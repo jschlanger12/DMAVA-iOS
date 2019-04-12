@@ -7,20 +7,41 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class ResourceTableViewController: UITableViewController {
+    
+    var getUrls: [String] = []
+    var titles: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 140.0
+        getResources()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    func getResources(){
+        let db = Firestore.firestore()
+        
+        db.collection("resource").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    
+                    self.getUrls.append(document.data()["getUrl"] as! String)
+                    self.titles.append(document.data()["title"] as! String)
+                }
+                
+                self.tableView.reloadData()
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -32,7 +53,7 @@ class ResourceTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return titles.count
     }
 
     
@@ -41,14 +62,14 @@ class ResourceTableViewController: UITableViewController {
 
         // Configure the cell...
         
-        cell.titleLabel?.text = "testing title"
+        cell.titleLabel?.text = titles[indexPath.row]
 
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
  
 
     /*
